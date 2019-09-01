@@ -1,0 +1,7 @@
+D:\S3Test\MobileBill\MobileBill\bin\Debug\MobileBill.exe.config
+D:\S3Test\MobileBill\MobileBill\bin\Debug\MobileBill.exe
+D:\S3Test\MobileBill\MobileBill\bin\Debug\MobileBill.pdb
+D:\S3Test\MobileBill\MobileBill\obj\Debug\MobileBill.csprojAssemblyReference.cache
+D:\S3Test\MobileBill\MobileBill\obj\Debug\MobileBill.csproj.CoreCompileInputs.cache
+D:\S3Test\MobileBill\MobileBill\obj\Debug\MobileBill.exe
+D:\S3Test\MobileBill\MobileBill\obj\Debug\MobileBill.pdb

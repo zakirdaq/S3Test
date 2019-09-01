@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Accentech Pvt. Ltd.">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript, ASP.NET MVC">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3Test</title>
+    <link rel="shortcut icon" type="image/ico" href="~/favicon.ico" />
+    @Styles.Render("~/Content/vendorCSS")
+    @Styles.Render("~/Content/userCSS")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/JsFile/AdminHighChart.js"></script>
+    <script src="~/Scripts/JsFile/highcharts-ng.js"></script>
+
+</head>
+<body>
+
+
+    <!-- Reder Sections -->
+    @RenderBody()
+    <!--Reder Sections-End -->
+
+    @Scripts.Render("~/bundles/mainScripts")
+    @Scripts.Render("~/bundles/angularScripts")
+    @Scripts.Render("~/bundles/appScript")
+
+<script src="~/Scripts/Vendor/jquery.doubleScroll.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

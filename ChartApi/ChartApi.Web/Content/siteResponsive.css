@@ -1,0 +1,259 @@
+﻿
+
+@media only screen and (min-width: 1281px)  {
+
+    .main-logo-sm {
+        visibility: hidden;
+    }
+
+    .main-logo {
+        display: block;
+    }
+
+    .user-nav-item {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+
+    .main-logo-sm {
+        visibility: hidden;
+    }
+
+    .main-logo {
+        display: block;
+    }
+
+    .user-nav-item {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 12px;
+    }
+
+    #render-body-section {
+        margin-top: 60px !important;
+    }
+
+    .page-header {
+        margin: 10px 0 10px 0 !important;
+    }
+
+    .player-block {
+        padding: 0 !important;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .eleven-players-block {
+        padding: 0 !important;
+    }
+
+    .player-table td {
+        font-size: 11px;
+    }
+
+
+    .selected-player-table .save-block {
+        padding: 10px !important;
+    }
+
+
+    .selected-player-table {
+        height: 650px !important;
+    }
+
+    .all-players-block {
+        margin: 0;
+        padding: 0;
+    }
+
+    table.type-select-table th {
+        padding: 0 10px !important;
+        vertical-align: middle !important;
+    }
+
+    .all-players-block {
+        padding: 0 !important;
+    }
+
+    .main-logo {
+        visibility: hidden;
+    }
+
+    .main-logo-sm {
+        display: block;
+    }
+
+    .logo-img .mobile-image img {
+        height: 300px !important;
+    }
+
+    .mobile-image {
+        display: block !important;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    #render-body-section {
+        margin-top: 60px !important;
+    }
+
+    .page-header {
+        margin: 10px 0 10px 0 !important;
+    }
+
+    .player-block {
+        padding: 0 !important;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .eleven-players-block {
+        padding: 0 !important;
+    }
+
+    .player-table td {
+        font-size: 11px;
+    }
+
+
+    .selected-player-table .save-block {
+        padding: 10px !important;
+    }
+
+
+    .selected-player-table {
+        height: 650px !important;
+    }
+
+    .all-players-block {
+        margin: 0;
+        padding: 0;
+    }
+
+    table.type-select-table th {
+        padding: 0 10px !important;
+        vertical-align: middle !important;
+    }
+
+    .all-players-block {
+        padding: 0 !important;
+    }
+
+    .main-logo {
+        visibility: hidden;
+    }
+
+    .main-logo-sm {
+        display: block;
+    }
+
+    .main-logo-sm img {
+        margin: 10px 0 0 10px;
+        height: 60px;
+    }
+
+    .logo-img {
+        margin-top: -200px;
+    }
+
+        .logo-img .mobile-image {
+            float: right;
+        }
+
+    .logo-img .mobile-image img {
+        height: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+
+    #render-body-section {
+        margin-top: 60px !important;
+    }
+
+    .page-header {
+        margin: 10px 0 10px 0 !important;
+    }
+
+    .player-block {
+        padding: 0 !important;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .eleven-players-block {
+        padding: 0 !important;
+    }
+
+    .player-table td {
+        font-size: 11px;
+    }
+
+
+    .selected-player-table .save-block {
+        padding: 10px !important;
+    }
+
+
+    .selected-player-table {
+        height: 650px !important;
+    }
+
+    .all-players-block {
+        margin: 0;
+        padding: 0;
+    }
+
+    table.type-select-table th {
+        padding: 0 10px !important;
+        vertical-align: middle !important;
+    }
+
+    .all-players-block {
+        padding: 0 !important;
+    }
+
+    .main-logo {
+        visibility: hidden;
+    }
+
+    .main-logo-sm {
+        display: block;
+    }
+
+    .main-logo-sm img {
+        height: 60px;
+        margin: 10px 10px 0;
+    }
+
+    .logo-img {
+        margin-top: -200px;
+    }
+
+    .logo-img .mobile-image {
+        float: right;
+    }
+
+        .logo-img .mobile-image img {
+            height: 150px;
+        }
+
+    
+}

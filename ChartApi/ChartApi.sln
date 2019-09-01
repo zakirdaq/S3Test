@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartApi.ClientModel", "ChartApi.ClientModel\ChartApi.ClientModel.csproj", "{030FA27A-B5E3-463F-A1AE-D77D01548FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartApi.Core", "ChartApi.Core\ChartApi.Core.csproj", "{C620B128-6555-4F1C-82C7-87E759C948CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartApi.Data", "ChartApi.Data\ChartApi.Data.csproj", "{E5C70AC1-FE25-4DDC-B7C9-44F46349A8B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartApi.Model", "ChartApi.Model\ChartApi.Model.csproj", "{A461C7EC-EC7A-402E-84BE-EB016FC17EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartApi.Service", "ChartApi.Service\ChartApi.Service.csproj", "{16606571-8E5A-42E3-89B9-2AE23370F4B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartApi.Web", "ChartApi.Web\ChartApi.Web.csproj", "{DD09DB62-6FC5-49D1-B420-E0AE1E783F18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{030FA27A-B5E3-463F-A1AE-D77D01548FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030FA27A-B5E3-463F-A1AE-D77D01548FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030FA27A-B5E3-463F-A1AE-D77D01548FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030FA27A-B5E3-463F-A1AE-D77D01548FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C620B128-6555-4F1C-82C7-87E759C948CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C620B128-6555-4F1C-82C7-87E759C948CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C620B128-6555-4F1C-82C7-87E759C948CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C620B128-6555-4F1C-82C7-87E759C948CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C70AC1-FE25-4DDC-B7C9-44F46349A8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C70AC1-FE25-4DDC-B7C9-44F46349A8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C70AC1-FE25-4DDC-B7C9-44F46349A8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C70AC1-FE25-4DDC-B7C9-44F46349A8B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A461C7EC-EC7A-402E-84BE-EB016FC17EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A461C7EC-EC7A-402E-84BE-EB016FC17EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A461C7EC-EC7A-402E-84BE-EB016FC17EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A461C7EC-EC7A-402E-84BE-EB016FC17EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16606571-8E5A-42E3-89B9-2AE23370F4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16606571-8E5A-42E3-89B9-2AE23370F4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16606571-8E5A-42E3-89B9-2AE23370F4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16606571-8E5A-42E3-89B9-2AE23370F4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD09DB62-6FC5-49D1-B420-E0AE1E783F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD09DB62-6FC5-49D1-B420-E0AE1E783F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD09DB62-6FC5-49D1-B420-E0AE1E783F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD09DB62-6FC5-49D1-B420-E0AE1E783F18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {461B562E-D8A9-4AAA-AD98-0383F0F80EC4}
+	EndGlobalSection
+EndGlobal

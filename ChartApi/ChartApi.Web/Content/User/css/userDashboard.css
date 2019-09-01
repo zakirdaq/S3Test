@@ -1,0 +1,155 @@
+﻿.tournament-list-section {
+    background: #eef2ff;
+    padding: 10px;
+}
+
+.tournament-block {
+    background: #163375;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.tournament-logo {
+    min-height: 150px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+    .tournament-logo .logo-image {
+        height: 120px;
+        width: 120px;
+        display: inline-block;
+        border-radius: 10px;
+        border: 10px solid;
+        background: #fff;
+        overflow: hidden;
+    }
+
+.tournament-name-block {
+    text-align: center;
+}
+
+.tournament-header, .tournament-start-date-block, .tournament-end-date-block {
+    color: #fff;
+}
+
+.tournament-action-btn {
+    text-align: center;
+}
+
+.tournament-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* ================= */
+.col-carousel {
+    margin: 20px 0;
+}
+/* owl nav */
+.owl-prev span, .owl-next span {
+    color: #FFF;
+}
+
+    .owl-prev span:hover,
+    .owl-next span:hover {
+        color: #8199A3;
+    }
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.owl-prev {
+    left: 7px;
+}
+
+.owl-next {
+    right: 7px;
+}
+/* removing blue outline from buttons */
+button:focus, button:active {
+    outline: none;
+}
+
+/* ===================================================================================== */
+
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #2d1052, 0 0 0 1px #280e4a;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+}
+
+
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -90px;
+    left: 60px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+
+
+
+.text-bold {
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .4);
+}
+
+    .meta a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, .4);
+    }
+
+        .meta a:hover {
+            color: rgba(0, 0, 0, .87);
+        }

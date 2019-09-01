@@ -1,0 +1,354 @@
+﻿
+
+.page-header {
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+.deadline-block {
+    padding: 5px;
+    font-size: 18px;
+    color: #040404;
+    font-weight: bold;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.type-select-table thead th {
+    border-color: #343a40;
+}
+
+.success {
+    background: #26a818 !important;
+}
+
+.error {
+    background: #c61616 !important;
+}
+
+.bg-warning {
+    background-color: #ff8507 !important;
+}
+
+.progress {
+    height: 1.3rem;
+    border-radius: .2rem;
+    background-color: #505050 !important;
+}
+
+
+
+.progress-label {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.tournament-player-select-section {
+    background: #2c6ca9;
+    padding: 10px;
+}
+
+.player-block {
+    overflow-y: auto;
+    /* background: #343a40; */
+    padding: 0;
+}
+
+.tournament-info {
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+
+.tournament-player-selection-box {
+    min-height: 700px;
+    overflow: hidden;
+}
+
+.player-block .header {
+    padding: 10px;
+    background: #e3abf9;
+    color: #421c51;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    letter-spacing: .05rem;
+}
+
+.player-type-selection-btn {
+    font-size: 13px;
+    color: #fff;
+}
+
+    .player-type-selection-btn:hover, .player-type-selection-btn:active {
+        color: #ee553c;
+    }
+
+    .player-type-selection-btn.active {
+        font-weight: 600;
+        color: #ee553c;
+        box-shadow: inset 0px 0px 0px 2px #ee553c;
+        -webkit-box-shadow: inset 0px 0px 0px 2px #ee553c;
+        -moz-box-shadow: inset 0px 0px 0px 2px #ee553c;
+    }
+
+.type-select-table {
+    margin-bottom: 0;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table.all-player, .table.selected-player {
+    background: #ffffff;
+    margin-bottom: 0px;
+}
+
+.table-hover.all-player tbody tr:hover {
+    color: #212529;
+    background-color: #9bffbe;
+    background-color: rgba(155, 255, 190, 0.17);
+}
+
+.table-hover.selected-player tbody tr:hover {
+    color: #212529;
+    background-color: #ff9b9b;
+    background-color: rgba(255, 155, 155, 0.17);
+}
+
+.table.all-player th {
+    color: #421c51;
+}
+
+.table.all-player td {
+    cursor: pointer;
+}
+
+.player-select-btn {
+    line-height: 15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+.captain-select-btn {
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: 20%;
+    padding: 0;
+}
+
+.captain-select-btn.selected {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+
+
+.player-select-table {
+    height: 640px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.selected-player-table {
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+    .selected-player-table .save-block {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+.eleven-players-block {
+    margin: 0;
+    background: #EFEFF5;
+    padding: 20px;
+    border: 2px solid #421c51;
+    height: 100%;
+}
+
+.all-players-block {
+    background: #421C51;
+    margin: 0 5px 0 0;
+    padding: 20px;
+    height: 100%;
+}
+
+.player-table th {
+    padding: 0.6rem;
+}
+
+.player-table td {
+    font-size: 12px;
+    padding: 0.3rem;
+}
+
+.button-row {
+    padding: 0;
+    text-align: center;
+}
+
+/*.team-filter .col-md-6:first-child {
+    padding-left: 0;
+}
+
+.team-filter .col-md-6:last-child {
+    padding-right: 0;
+}*/
+
+.team-filter label {
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.all-team-btn {
+    color: #fff;
+    font-size: 15px;
+}
+
+    .all-team-btn:hover {
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .all-team-btn.active {
+        border: 1px solid;
+    }
+
+.selection-status-block {
+    padding: 0 0 10px;
+}
+
+.general-status {
+    padding: 10px 0 5px 0;
+}
+
+.progress-bar-status {
+    padding: 0;
+}
+
+.credit-left-block {
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+    background: transparent;
+    color: #421c51;
+    border-color: #421C51;
+    border: 1px solid;
+    font-family: 'Oswald', sans-serif;
+}
+
+    .credit-left-block span {
+        font-size: 18px;
+        font-weight: 700;
+        color: #421c51;
+    }
+
+.player-count-block {
+    font-size: 12px;
+    color: #dedede;
+    background: #2f3b50;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+}
+
+    .player-count-block span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+.message-block {
+    padding: 5px;
+    border-radius: 4px;
+    background: #2c5273;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    display: table;
+    height: 30px;
+    width: 100%;
+}
+
+.message-block span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+[role="button"],
+button,
+label,
+select {
+    cursor: pointer;
+}
+
+input {
+    cursor: text
+}
+
+.btn.btn-auto-select, .btn.btn-reset {
+    width: 100%;
+    height: 100%;
+}
+
+table .bg-info {
+    background-color: #b1b1b1 !important;
+}
+
+table.player-table {
+    color: #421c51;
+}
+
+table.type-select-table {
+    background: transparent;
+}
+
+td.button-row .btn-outline-info {
+    color: #1e802b;
+    border-color: #1e802b;
+}
+
+    td.button-row .btn-outline-info:hover {
+        color: #fff;
+        background-color: #1e802b;
+        border-color: #1e802b;
+    }
+
+.eleven-players-block .header {
+    background: #421c51;
+    color: #fff;
+}
+
+.all-players-block .header {
+    background: #efeff5;
+}
+
+.btn-auto-select, btn-reset {
+    text-transform: uppercase !important;
+    font-weight: bold;
+}
+

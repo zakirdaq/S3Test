@@ -1,0 +1,321 @@
+﻿@{
+    ViewBag.Title = "Homepage";
+    Layout = "~/Views/Shared/_HomePageLayout.cshtml";
+}
+
+<h2>Homepage</h2>
+
+<span>Please Check <a href="/api/ChartValue">this api page</a></span>
+
+<div class="col-xs-12 col-sm-12" ng-controller="homeCtrl">
+    <div class="row">
+        <chart-directive type="line" data="allChartValueFromDb"></chart-directive>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading text-lg text-bold text-uppercase">Chart Values</div>
+        <div class="panel-body border-green pt pb">
+            <div class="row mb">
+                <div class="col-sm-9 padding-left-zero">
+                    <div class="col-sm-4">
+                        <input type="text" ng-model="SearchText" placeholder='Search Here' class="form-control" />
+                    </div>
+                    <div class="col-sm-8 text-center-vertical">
+                        Filtered <b>{{ filtered.length }}</b> of <b>{{ allChartValueFromDb.length}}</b> data
+                    </div>
+                </div>
+                <div class="col-sm-3 padding-right-zero">
+                    <div class="col-sm-6 text-center-vertical">
+                        <label>Page Size:</label>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <select ng-model="itemsPerPage" class="form-control">
+                            <option ng-value="1">1</option>
+                            <option ng-value="5">5</option>
+                            <option ng-value="10">10</option>
+                            <option ng-value="15">15</option>
+                            <option ng-value="30">30</option>
+                            <option ng-value="50">50</option>
+                            <option ng-value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12" ng-show="filtered.length > 0">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Time
+                                </th>
+                                <th>
+                                    Value
+                                </th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>
+                                    Time
+                                </th>
+                                <th>
+                                    Value
+                                </th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr ng-class="{'selected':data == selectedRow}"
+                                ng-repeat="data in filtered = (allChartValueFromDb  | filter:SearchText | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo: itemsPerPage : (currentPage - 1) * itemsPerPage">
+                                <td>{{data.Time }}</td>
+                                <td>{{data.Value }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pull-left">
+                        <br />
+                        <pre>Page: {{currentPage}}/{{numPages}}</pre>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pull-right">
+                        <ul uib-pagination total-items="filtered.length" items-per-page="itemsPerPage" ng-model="currentPage" max-size="5" boundary-links="true" num-pages="numPages" boundary-link-numbers="true" rotate="false"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12" ng-show="filtered.length == 0">
+                <div class="col-xs-12 col-sm-12 col-md-12 alert alert-danger">
+                    No Value Found
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>Chart</h3>
+        <div id="chartcontainer"></div>
+    </div>
+    <div>
+        <h3>Chart</h3>
+        <chart config="chartConfig"></chart>
+    </div>
+</div>
+@section scripts
+{
+    <script type="text/javascript">
+  
+        app.directive("chartDirective",
+            function () {
+                return {  
+                    restrict: 'E',  
+                    template: '<div></div>',
+                    scope: {  
+                        data: '='  
+                    },  
+                    link: function (scope, element, attribute) {  
+                        scope.chartConfig = new Highcharts.Chart({  
+                            chart: {  
+                                type: scope.type,  
+                                renderTo: 'chartcontainer'                        
+                            },  
+                            title: {  
+                                text: 'Value Chart'  
+                            },  
+  
+                            xAxis: {  
+                                type: 'time',  
+                                times: []  
+                            },  
+                            yAxis: {  
+                                title: {  
+                                    text: 'values'  
+                                },  
+                                plotLines: [{  
+                                    value: 0,  
+                                    width: 1,  
+                                    color: '#808080'  
+                                }]  
+                            },  
+                            tooltip: {  
+                                valueSuffix: 'Value'  
+                            }  
+                        });  
+  
+                        scope.seriesData = [];  
+                        scope.times = [];  
+                               
+                        scope.$watch('data', function (newValue) {  
+                            if (newValue != undefined) {  
+  
+                                _.forEach(scope.data, function (item) {  
+                                    scope.times.push(item.Time);  
+                                    scope.seriesData.push({ name: 'Value', y: item.Value, drilldown: 'Value' });  
+                                });  
+  
+                                $timeout(function () {  
+                                    scope.chartConfig.addSeries({  
+                                        name: 'Value 1',  
+                                        data: scope.seriesData  
+                                    });  
+                             
+                                }, 2000);  
+                            }  
+                        });  
+  
+                    },  
+                    controller: function ($scope, homeService) {  
+                
+                    }  
+                }  
+            });
+        
+        app.filter('startFrom',
+			function() {
+				return function(input, start) {
+					if (input) {
+						start = +start; //parse to int
+						return input.slice(start);
+					}
+					return [];
+				}
+			});
+		app.factory('focus',
+			function($rootScope, $timeout) {
+				return function(name) {
+					$timeout(function() {
+						$rootScope.$broadcast('focusOn', name);
+					});
+				};
+			});
+		app.factory('homeService',
+			[
+				'$http', function($http) {
+
+					return {
+						getChartValue: function(id) {
+							return $http.get('/api/ChartValue/' + id);
+						},
+                        getAllChartValue: function() {
+                            return $http.get('/api/ChartValue');
+						}
+					};
+				}
+			]);
+		app.controller('homeCtrl',
+            function ($scope, $timeout, $http, focus, $location, $anchorScroll, homeService, $log, $ngBootbox) {
+
+                loadAllChartValue();
+
+				// Populate data
+				$scope.selectedRow = null;
+                $scope.populateChartValue = function (chartValue) {
+                    $scope.selectedRow = chartValue;
+                    $scope.Id = chartValue.Id;
+                    $scope.Time = chartValue.Time;
+                    $scope.Value = chartValue.Value;
+					$location.hash('searchDivId');
+					$anchorScroll();
+					focus('focusMe');
+				}
+
+				// Load data
+                function loadAllChartValue() {
+                    $scope.allChartValueFromDb = [];
+                    homeService.getAllChartValue()
+						.then(function onSuccess(response) {
+                            $scope.allChartValueFromDb = response.data;
+						})
+						.catch(function onError(response) {
+							$ngBootbox.alert('Error in loading');
+						});
+				}
+
+                $scope.currentPage = 1; //current page
+				$scope.itemsPerPage = 5; //max no of items to display in a page
+                $scope.filteredItems = $scope.allChartValueFromDb.length; //Initially for no filter
+                $scope.totalItems = $scope.allChartValueFromDb.length;
+
+				$scope.setPage = function(pageNo) {
+					$scope.currentPage = pageNo;
+				};
+				$scope.filter = function() {
+					$timeout(function() {
+							$scope.filteredItems = $scope.filtered.length;
+						},
+						9000);
+				};
+				$scope.sort_by = function(predicate) {
+					$scope.predicate = predicate;
+					$scope.reverse = !$scope.reverse;
+				};
+			});
+    
+    var chart;
+    $(document).ready(function () {
+
+        Highcharts.setOptions({
+           
+            lang: {
+          
+                thousandsSep: ','
+            }
+        });
+
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chartcontainer'
+
+            },
+            title: {
+                text: ''
+            },
+
+            xAxis: [{
+                times: [1,2,3,4,5,6]
+            },
+
+            {
+                title: {
+                    text: 'time'
+                }
+            }],
+
+            yAxis: [{
+                title: {
+                    text: 'value'                   
+                }
+            }],
+
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: false,
+                        rotation: -80,
+                        y:-17,
+                    }
+                }
+            },
+           
+            series: [{
+
+                showInLegend: false,
+            }, {
+
+                showInLegend: false,
+            } ,
+            {
+                type: 'line',
+                name: "Value",
+                data: [100,200,150,300,400],
+            },
+            ]
+        });
+    });    
+    </script>
+}
