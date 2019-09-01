@@ -4,7 +4,6 @@ D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Service.pdb
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Core.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Data.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Model.dll
-D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\itextsharp.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\System.Web.Mvc.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\EntityFramework.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\EntityFramework.BulkInsert.dll
@@ -15,9 +14,9 @@ D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\Microsoft.Web.Infrastructure.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\System.Web.WebPages.Deployment.dll
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Core.pdb
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Data.pdb
+D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Data.dll.config
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Model.pdb
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\ChartApi.Model.dll.config
-D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\itextsharp.xml
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\System.Web.Mvc.xml
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\EntityFramework.xml
 D:\S3Test\ChartApi\ChartApi.Service\bin\Debug\EntityFramework.BulkInsert.pdb

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,14 +50,14 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac, Version=4.9.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.9.0\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Autofac.Integration.WebApi, Version=4.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.WebApi2.4.2.0\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
+    <Reference Include="Autofac.Integration.WebApi, Version=4.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.WebApi2.4.3.0\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -68,14 +68,20 @@
     <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.5\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -141,11 +147,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\Bootstrapper.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -160,6 +161,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="angular-highcharts-demo.html" />
     <Content Include="App\app.js" />
     <Content Include="App\Controller\CountryController.js" />
     <Content Include="App\Controller\HomepageController.js" />
@@ -302,96 +304,13 @@
     <Content Include="fonts\Linearicons-Free.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\about-logo.png" />
-    <Content Include="images\apple-icon.png" />
-    <Content Include="images\apple-touch-icon.png" />
-    <Content Include="images\blog-1.jpg" />
-    <Content Include="images\blog-2.jpg" />
-    <Content Include="images\blog-3.jpg" />
-    <Content Include="images\blog-4.jpg" />
-    <Content Include="images\blog-5.jpg" />
-    <Content Include="images\blog-6.jpg" />
-    <Content Include="images\comment-image.jpeg" />
-    <Content Include="images\download-bg.png" />
-    <Content Include="images\download-image.png" />
-    <Content Include="images\favicon.ico" />
-    <Content Include="images\feature-bg.png" />
-    <Content Include="images\feature-image.png" />
-    <Content Include="images\gallery-1.jpg" />
-    <Content Include="images\gallery-2.jpg" />
-    <Content Include="images\gallery-3.jpg" />
-    <Content Include="images\gallery-4.jpg" />
-    <Content Include="images\header-bg.jpg" />
-    <Content Include="images\header-mobile.png" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\map-marker.png" />
-    <Content Include="images\mobile-screen.png" />
-    <Content Include="images\play-button.png" />
-    <Content Include="images\play-store-icon.png" />
-    <Content Include="images\progress-bg.jpg" />
-    <Content Include="images\progress-phone.png" />
-    <Content Include="images\red_cricket_ball.jpg" />
-    <Content Include="images\sticky-image.jpg" />
-    <Content Include="images\subscribe-bg.jpg" />
-    <Content Include="images\team-1.png" />
-    <Content Include="images\team-2.jpg" />
-    <Content Include="images\team-3.jpg" />
-    <Content Include="images\team-4.jpg" />
-    <Content Include="images\userLoginBg.jpg" />
-    <Content Include="images\video-bg.jpg" />
-    <Content Include="images\video-image.jpg" />
-    <Content Include="Scripts\JsFile\AdminHighChart.js" />
-    <Content Include="Scripts\JsFile\angular-base64-upload.js" />
-    <Content Include="Scripts\JsFile\angular-block-ui.js" />
-    <Content Include="Scripts\JsFile\angular-daterangepicker.js" />
-    <Content Include="Scripts\JsFile\angular-ui-bootstrap-modal.js" />
-    <Content Include="Scripts\JsFile\autocomplete.js" />
-    <Content Include="Scripts\JsFile\bootbox.js" />
-    <Content Include="Scripts\JsFile\cmnNewjs.js" />
-    <Content Include="Scripts\JsFile\common-directives.js" />
-    <Content Include="Scripts\JsFile\highcharts-ng.js" />
-    <Content Include="Scripts\JsFile\highcharts.js" />
-    <Content Include="Scripts\JsFile\multiple-select.js" />
-    <Content Include="Scripts\JsFile\ngBootbox.js" />
-    <Content Include="Scripts\JsFile\popoverCustom.js" />
-    <Content Include="Scripts\JsFile\sortable.js" />
-    <Content Include="Scripts\JsFile\ui-bootstrap-tpls-0.10.0.js" />
-    <Content Include="Scripts\mdb.js" />
-    <Content Include="Scripts\mdb.min.js" />
-    <Content Include="Scripts\moment-with-locales.js" />
-    <Content Include="Scripts\moment-with-locales.min.js" />
-    <Content Include="Scripts\moment.js" />
-    <Content Include="Scripts\moment.min.js" />
-    <Content Include="Scripts\User\easing.min.js" />
-    <Content Include="Scripts\User\hoverIntent.js" />
-    <Content Include="Scripts\User\jquery-ui.js" />
-    <Content Include="Scripts\User\jquery.ajaxchimp.min.js" />
-    <Content Include="Scripts\User\jquery.circlechart.js" />
-    <Content Include="Scripts\User\jquery.magnific-popup.min.js" />
-    <Content Include="Scripts\User\jquery.nice-select.min.js" />
-    <Content Include="Scripts\User\mail-script.js" />
-    <Content Include="Scripts\User\main.js" />
-    <Content Include="Scripts\User\mn-accordion.js" />
-    <Content Include="Scripts\User\owl.carousel.min.js" />
-    <Content Include="Scripts\User\superfish.js" />
-    <Content Include="Scripts\User\superfish.min.js" />
-    <Content Include="Scripts\User\vendor\bootstrap.min.js" />
-    <Content Include="Scripts\User\vendor\jquery-2.2.4.min.js" />
-    <Content Include="Content\angular-block-ui.min.css" />
-    <Content Include="Scripts\Vendor\angular-avatar.min.js" />
-    <Content Include="Scripts\Vendor\angular-block-ui.min.js" />
-    <Content Include="Scripts\Vendor\dialogs.min.js" />
-    <Content Include="Scripts\Vendor\jquery.doubleScroll.js" />
-    <Content Include="Scripts\Vendor\ui-bootstrap-tpls.js" />
-    <Content Include="Scripts\Vendor\ui-bootstrap.js" />
-    <Content Include="template\modal-form.html" />
-    <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
     <Content Include="Scripts\angular-aria.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-csp.css" />
+    <Content Include="Scripts\angular-highcharts.js" />
     <Content Include="Scripts\angular-loader.js" />
     <Content Include="Scripts\angular-loader.min.js" />
     <Content Include="Scripts\angular-message-format.js" />
@@ -409,60 +328,42 @@
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular-touch.js" />
     <Content Include="Scripts\angular-touch.min.js" />
-    <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\errors.json" />
-    <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-touch.min.js.map" />
-    <Content Include="Scripts\angular-sanitize.min.js.map" />
-    <Content Include="Scripts\angular-route.min.js.map" />
-    <Content Include="Scripts\angular-resource.min.js.map" />
-    <Content Include="Scripts\angular-parse-ext.min.js.map" />
-    <Content Include="Scripts\angular-messages.min.js.map" />
-    <Content Include="Scripts\angular-message-format.min.js.map" />
-    <Content Include="Scripts\angular-loader.min.js.map" />
-    <Content Include="Scripts\angular-cookies.min.js.map" />
-    <Content Include="Scripts\angular-aria.min.js.map" />
-    <Content Include="Scripts\angular-animate.min.js.map" />
-    <Content Include="fonts\Linearicons-Free.eot" />
-    <Content Include="fonts\Linearicons-Free.ttf" />
-    <Content Include="fonts\Linearicons-Free.woff" />
-    <Content Include="fonts\Linearicons-Free.woff2" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
-    <Content Include="Scripts\esm\popper.min.js.map" />
-    <Content Include="Scripts\esm\popper.js.map" />
-    <Content Include="Scripts\esm\popper-utils.min.js.map" />
-    <Content Include="Scripts\esm\popper-utils.js.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\User\css\bootstrap.css.map" />
-    <Content Include="Content\User\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\User\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\User\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\User\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\User\fonts\FontAwesome.otf" />
-    <Content Include="Content\User\fonts\Linearicons-Free.eot" />
-    <Content Include="Content\User\fonts\Linearicons-Free.ttf" />
-    <Content Include="Content\User\fonts\Linearicons-Free.woff" />
-    <Content Include="Content\User\fonts\Linearicons-Free.woff2" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\PROTHOMA.TTF" />
-    <Content Include="Content\androidapp\super11.apk" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="Scripts\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="Scripts\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="Scripts\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="Scripts\highcharts\adapters\standalone-framework.js" />
+    <Content Include="Scripts\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="Scripts\highcharts\highcharts-more.js" />
+    <Content Include="Scripts\highcharts\highcharts-more.src.js" />
+    <Content Include="Scripts\highcharts\highcharts.js" />
+    <Content Include="Scripts\highcharts\highcharts.src.js" />
+    <Content Include="Scripts\highcharts\highstock.js" />
+    <Content Include="Scripts\highcharts\highstock.src.js" />
+    <Content Include="Scripts\highcharts\modules\annotations.js" />
+    <Content Include="Scripts\highcharts\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\modules\canvas-tools.js" />
+    <Content Include="Scripts\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="Scripts\highcharts\modules\data.js" />
+    <Content Include="Scripts\highcharts\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.js" />
+    <Content Include="Scripts\highcharts\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\modules\funnel.js" />
+    <Content Include="Scripts\highcharts\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\modules\heatmap.js" />
+    <Content Include="Scripts\highcharts\modules\heatmap.src.js" />
+    <Content Include="Scripts\highcharts\modules\map.js" />
+    <Content Include="Scripts\highcharts\modules\map.src.js" />
+    <Content Include="Scripts\highcharts\themes\dark-blue.js" />
+    <Content Include="Scripts\highcharts\themes\dark-green.js" />
+    <Content Include="Scripts\highcharts\themes\gray.js" />
+    <Content Include="Scripts\highcharts\themes\grid.js" />
+    <Content Include="Scripts\highcharts\themes\skies.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -1201,25 +1102,126 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\JsFile\AdminHighChart.js" />
+    <Content Include="Scripts\JsFile\angular-base64-upload.js" />
+    <Content Include="Scripts\JsFile\angular-block-ui.js" />
+    <Content Include="Scripts\JsFile\angular-daterangepicker.js" />
+    <Content Include="Scripts\JsFile\angular-ui-bootstrap-modal.js" />
+    <Content Include="Scripts\JsFile\autocomplete.js" />
+    <Content Include="Scripts\JsFile\bootbox.js" />
+    <Content Include="Scripts\JsFile\cmnNewjs.js" />
+    <Content Include="Scripts\JsFile\common-directives.js" />
+    <Content Include="Scripts\JsFile\highcharts-ng.js" />
+    <Content Include="Scripts\JsFile\highcharts.js" />
+    <Content Include="Scripts\JsFile\multiple-select.js" />
+    <Content Include="Scripts\JsFile\ngBootbox.js" />
+    <Content Include="Scripts\JsFile\popoverCustom.js" />
+    <Content Include="Scripts\JsFile\sortable.js" />
+    <Content Include="Scripts\JsFile\ui-bootstrap-tpls-0.10.0.js" />
+    <Content Include="Scripts\mdb.js" />
+    <Content Include="Scripts\mdb.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\sitemap.xml" />
+    <Content Include="Scripts\test-bundles\angular-aria.js" />
+    <Content Include="Scripts\test-bundles\angular-cookies.js" />
+    <Content Include="Scripts\test-bundles\angular-message-format.js" />
+    <Content Include="Scripts\test-bundles\angular-messages.js" />
+    <Content Include="Scripts\test-bundles\angular-resource.js" />
+    <Content Include="Scripts\test-bundles\angular-route.js" />
+    <Content Include="Scripts\test-bundles\angular-sanitize.js" />
+    <Content Include="Scripts\test-bundles\angular-touch.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\User\easing.min.js" />
+    <Content Include="Scripts\User\hoverIntent.js" />
+    <Content Include="Scripts\User\jquery-ui.js" />
+    <Content Include="Scripts\User\jquery.ajaxchimp.min.js" />
+    <Content Include="Scripts\User\jquery.circlechart.js" />
+    <Content Include="Scripts\User\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\User\jquery.nice-select.min.js" />
+    <Content Include="Scripts\User\mail-script.js" />
+    <Content Include="Scripts\User\main.js" />
+    <Content Include="Scripts\User\mn-accordion.js" />
+    <Content Include="Scripts\User\owl.carousel.min.js" />
+    <Content Include="Scripts\User\superfish.js" />
+    <Content Include="Scripts\User\superfish.min.js" />
+    <Content Include="Scripts\User\vendor\bootstrap.min.js" />
+    <Content Include="Scripts\User\vendor\jquery-2.2.4.min.js" />
+    <Content Include="Content\angular-block-ui.min.css" />
+    <Content Include="Scripts\Vendor\angular-avatar.min.js" />
+    <Content Include="Scripts\Vendor\angular-block-ui.min.js" />
+    <Content Include="Scripts\Vendor\dialogs.min.js" />
+    <Content Include="Scripts\Vendor\jquery.doubleScroll.js" />
+    <Content Include="Scripts\Vendor\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\Vendor\ui-bootstrap.js" />
+    <Content Include="template\modal-form.html" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\Linearicons-Free.eot" />
+    <Content Include="fonts\Linearicons-Free.ttf" />
+    <Content Include="fonts\Linearicons-Free.woff" />
+    <Content Include="fonts\Linearicons-Free.woff2" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\User\css\bootstrap.css.map" />
+    <Content Include="Content\User\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\User\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\User\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\User\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\User\fonts\FontAwesome.otf" />
+    <Content Include="Content\User\fonts\Linearicons-Free.eot" />
+    <Content Include="Content\User\fonts\Linearicons-Free.ttf" />
+    <Content Include="Content\User\fonts\Linearicons-Free.woff" />
+    <Content Include="Content\User\fonts\Linearicons-Free.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\PROTHOMA.TTF" />
+    <Content Include="Content\androidapp\super11.apk" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Scripts\errors.json" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-touch.min.js.map" />
+    <Content Include="Scripts\angular-sanitize.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Scripts\angular-resource.min.js.map" />
+    <Content Include="Scripts\angular-parse-ext.min.js.map" />
+    <Content Include="Scripts\angular-messages.min.js.map" />
+    <Content Include="Scripts\angular-message-format.min.js.map" />
+    <Content Include="Scripts\angular-loader.min.js.map" />
+    <Content Include="Scripts\angular-cookies.min.js.map" />
+    <Content Include="Scripts\angular-aria.min.js.map" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Vendor\ajaxchimp.js" />
     <Content Include="Scripts\Vendor\angular-block-ui.js" />
     <Content Include="Scripts\Vendor\angular-chart.js" />
@@ -1253,8 +1255,10 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Scripts\version.json" />
     <Content Include="Views\Shared\_HomePageLayout.cshtml" />
+    <Content Include="Views\Shared\NoPermission.cshtml" />
+    <Content Include="Views\Home\Homepage.cshtml" />
+    <Content Include="Scripts\version.json" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -1264,8 +1268,6 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Shared\NoPermission.cshtml" />
-    <Content Include="Views\Home\Homepage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1273,17 +1275,13 @@
     <Folder Include="Files\Image\" />
     <Folder Include="Files\Venue\" />
     <Folder Include="Helpers\" />
+    <Folder Include="images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -1313,6 +1311,9 @@
       <Project>{16606571-8e5a-42e3-89b9-2ae23370f4b1}</Project>
       <Name>ChartApi.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -1347,7 +1348,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

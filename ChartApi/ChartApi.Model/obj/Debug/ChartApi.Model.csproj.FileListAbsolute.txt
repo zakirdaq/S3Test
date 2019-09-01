@@ -30,12 +30,10 @@ D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Logging.Abstrac
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Logging.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Options.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Primitives.dll
-D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Newtonsoft.Json.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Remotion.Linq.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Buffers.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Collections.Immutable.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Data.SqlClient.dll
-D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Interactive.Async.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Memory.dll
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Numerics.Vectors.dll
@@ -64,12 +62,9 @@ D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Logging.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Options.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Microsoft.Extensions.Primitives.xml
-D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Newtonsoft.Json.pdb
-D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Newtonsoft.Json.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\Remotion.Linq.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Buffers.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Collections.Immutable.xml
-D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Interactive.Async.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Memory.xml
 D:\S3Test\ChartApi\ChartApi.Model\bin\Debug\System.Numerics.Vectors.xml
